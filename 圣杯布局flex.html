@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <style>
+        body {
+
+        }
+
+        #header, #footer {
+            background-color: dimgrey;
+            text-align: center;
+            height: 60px;
+            line-height: 60px;
+        }
+
+        #container {
+            display: flex;
+        }
+
+        #container .content {
+            text-align: center;
+            height: 300px;
+            line-height: 300px;
+        }
+
+        #center {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+            background-color: rgb(206, 201, 201);
+        }
+
+        #left {
+            /*width: 200px;*/
+            flex-basis: 200px;
+            background-color: rgba(95, 179, 235, 0.972);
+        }
+
+        #right {
+            /*width: 150px;*/
+            flex-basis: 150px;
+            background-color: rgba(231, 105, 2);
+        }
+    </style>
+</head>
+<body>
+<div id="header">header</div>
+<div id="container">
+    <div id="left" class="content">left</div>
+    <div id="center" class="content">center</div>
+    <div id="right" class="content">right</div>
+</div>
+<div id="footer">footer</div>
+
+<script>
+
+</script>
+
+</body>
+</html>
